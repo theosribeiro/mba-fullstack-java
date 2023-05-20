@@ -4,8 +4,10 @@ import br.com.pos.arch.exagonal.application.domain.Contact;
 import br.com.pos.arch.exagonal.application.ports.input.ICreateContactUseCase;
 import br.com.pos.arch.exagonal.application.ports.output.IContactRepositoryPort;
 import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 
 @AllArgsConstructor
+@Service
 public class CreateContactUseCase implements ICreateContactUseCase {
 
 
