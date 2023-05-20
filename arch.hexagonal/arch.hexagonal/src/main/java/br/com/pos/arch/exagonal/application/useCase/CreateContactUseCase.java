@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class CreateContactUseCase implements ICreateContactUseCase {
 
-
     private final IContactRepositoryPort iContactRepositoryPort;
     public Contact execute(Contact contactDomain) {
         return contactDomain.save(iContactRepositoryPort);
