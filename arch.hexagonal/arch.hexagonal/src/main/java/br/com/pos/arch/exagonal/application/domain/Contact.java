@@ -1,5 +1,6 @@
 package br.com.pos.arch.exagonal.application.domain;
 
+import br.com.pos.arch.exagonal.application.ports.output.IContactRepositoryPort;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,4 +14,8 @@ public class Contact {
     private Long id;
     private String name;
     private String email;
+
+    public Contact save(IContactRepositoryPort iContactRepositoryPort){
+        return iContactRepositoryPort.createContact(this);
+    }
 }
