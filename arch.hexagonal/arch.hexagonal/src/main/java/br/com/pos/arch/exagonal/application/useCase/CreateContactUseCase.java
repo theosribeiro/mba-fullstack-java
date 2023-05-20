@@ -3,11 +3,11 @@ package br.com.pos.arch.exagonal.application.useCase;
 import br.com.pos.arch.exagonal.application.domain.Contact;
 import br.com.pos.arch.exagonal.application.ports.input.ICreateContactUseCase;
 import br.com.pos.arch.exagonal.application.ports.output.IContactRepositoryPort;
+import br.com.pos.arch.exagonal.application.utils.UseCase;
 import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Service;
 
 @AllArgsConstructor
-@Service
+@UseCase
 public class CreateContactUseCase implements ICreateContactUseCase {
 
     private final IContactRepositoryPort iContactRepositoryPort;
